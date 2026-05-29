@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'Panel de Practicante - ' . $intern->name)
+@section('title', 'Control de Horas - ' . $intern->name)
 
 @section('content')
 <div class="mb-6 flex items-center gap-4">
-    <a href="{{ route('interns.index') }}" class="text-gray-500 hover:text-primary transition-colors">
+    <a href="{{ route('time_control.index') }}" class="text-gray-500 hover:text-primary transition-colors">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
     </a>
-    <h1 class="text-3xl font-bold text-gray-900">{{ $intern->name }}</h1>
+    <h1 class="text-3xl font-bold text-gray-900">{{ $intern->name }} - Control de Horas</h1>
 </div>
 
 <!-- Dashboard Stats -->
